@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.captcha-container {
+  min-width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(185, 185, 185);
+  border-radius: 20px;
+  font-family: "poppins", sans-serif;
+}
+
+.header {
+  background: #037ae2;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  padding: 15px;
+}
+
+.securityCode {
+  width: 100%;
+  height: 80px;
+  border: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.securityCode p {
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 5vw;
+  font-weight: bold;
+  letter-spacing: 5px;
+  user-select: none;
+}
+
+.securityCode .icons {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+.securityCode .icons .sync {
+  font-size: 1.5rem;
+  color: #e20328;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.securityCode .icons .sync:hover {
+  color: #000000;
+}
+
+.userInput {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.userInput input {
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  border: 1px solid gray;
+  border-right: none;
+  padding: 12px;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #037ae2;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.btn:hover {
+  background: #036cc9;
+}

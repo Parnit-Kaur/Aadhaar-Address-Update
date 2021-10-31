@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Address Update</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <div class="header-container container">
+          <div class="logo">Aadhaar Address Update</div>
+          <div class="right-nav">
+            <div class="name">Tesseract</div>
+            <div class="aad-num">XXXX XXXX X123</div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="form-container container">
+          <h2 class="head">Aadhaar Address Update</h2>
+          <form action="" class="update-form">
+            <div class="tenant-owner">
+              Are you the owner or tenant?
+              <select name="landlord" id="landlord">
+                <option value="owner">Owner</option>
+                <option value="tenant">Tenant</option>
+              </select>
+            </div>
+            <div class="address-area prev-add">
+              <h4 class="section-head">Previous Address:</h4>
+              <div class="address-container">
+                <div class="prev-add-container">
+                  House no. 45<br />
+                  Dashmesh Enclave<br />
+                  Dhakola<br />
+                  Zirakpur<br />
+                  Punjab, India<br />
+                  PIN : 121234<br />
+                </div>
+              </div>
+            </div>
+            <div class="address-area">
+              <h4 class="section-head">Updated Address:</h4>
+              <div class="address-container">
+                <textarea
+                  name="address"
+                  id="address"
+                  placeholder="Address"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-btns">
+              <a href="https://cfgwr.csb.app/ll-witness.html"
+                ><button id="next" class="btn save-btn">
+                  Next
+                </button></a
+              >
+              <button type="reset" class="btn reset-btn">Reset</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verify Address</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <div class="header-container container">
+          <div class="logo">Aadhaar Address Update</div>
+          <div class="right-nav">
+            <div class="name">Tesseract</div>
+            <div class="aad-num">XXXX XXXX X123</div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="form-container container">
+          <h2 class="head">Witness Verification Form</h2>
+          <form action="" class="update-form">
+            <div class="tenant-owner">
+              Witness-Name
+            </div>
+            <div class="address-area prev-add">
+              <h4 class="section-head">Address:</h4>
+              <div class="address-container">
+                <!-- <span>XXXXXX</span><br />
+                <span>XXXXXX XXX X</span><br />
+                <span>XXXXXXXXXXXXXXXX</span><br />
+                <span>XXXXXXXX</span><br />
+                <span>XXXX XX</span><br /> -->
+                <textarea
+                  name="add-"
+                  id="add"
+                  placeholder="Address"
+                  autocomplete="off"
+                ></textarea>
+              </div>
+            </div>
+            <div class="address-area">
+              <h4 class="section-head">
+                Mark the checkbox and Enter your Name,Phone Number and also
+                upload your photograph
+              </h4>
+              <div class="address-container">
+                <input
+                  type="text"
+                  class="line1"
+                  placeholder="Name"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  class="line1"
+                  placeholder="Phone Number"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  class="line1"
+                  placeholder="Add your photograph to your google drive and paste the link here"
+                  autocomplete="off"
+                />
+
+                <p>
+                  I have read and verified all the details and I provide consent
+                  to use my details for the above user's address updation
+                  <input type="checkbox" id="myCheck" onclick="myFunction()" />
+                </p>
+
+                <p id="text" style="display: none;">
+                  You have provided Consent
+                </p>
+              </div>
+            </div>
+            <div class="form-btns">
+              <button type="submit" class="btn save-btn">Submit</button>
+              <button type="reset" class="btn reset-btn">Reset</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+  </script>
+</html>

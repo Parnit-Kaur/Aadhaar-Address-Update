@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <div class="header-container container">
+          <div class="logo">Aadhaar Address Update</div>
+          <div class="right-nav">
+            <div class="name">Priya Premprakash Babu</div>
+            <div class="aad-num">XXXX XXXX X460</div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="form-container container">
+          <h2 class="head">Aadhaar Authentication</h2>
+          <form action="" class="update-form">
+            <div class="address-area prev-add">
+              <h4 class="section-head">Enter Aadhaar Number</h4>
+              <div class="address-container">
+                <input
+                  type="number"
+                  class="line1"
+                  placeholder="123456789000"
+                  pattern="[0-9]{12}"
+                />
+              </div>
+            </div>
+            <div class="address-area">
+              <h4 class="section-head">Enter OTP:</h4>
+              <div class="address-container">
+                <input type="text" class="line1" placeholder="XXXXX" disabled />
+              </div>
+            </div>
+            <div class="form-btns">
+              <button type="submit" class="btn save-btn">Get OTP</button>
+              <button class="btn submitotp-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
